@@ -27,16 +27,28 @@ fun one (){
 //2. Create a function that takes in an array of names and returns the number of
 //names longer than 5 characters (2pts)
 
-fun two (names:Array<String>):Int{
-    var x = 0
-    for(name in names)
+fun two (names:Array<String>):Int {
+//
+//    for(name in names)
+//        if (name.length > 5){
+//            return name.length
+
+
+    var numbers =0
+
+    for (name in names )
+    {
         if (name.length > 5){
-            return x++
+            numbers++
+        }
+    }
+      return numbers
         }
 
 
 
-}
+
+
 
 //3. You are creating a robot to serve drinks at a party. The robot is required to
 //serve a glass of milk for guests under the age of 6. For guests under the age of
@@ -47,16 +59,24 @@ fun two (names:Array<String>):Int{
 
 
 fun three(age:Int){
-       if(age > 6){
-           println("milk")
-       }
+//    if(age > 6){
+//        println("milk")
+//    }
+
+
+    if(age in 1..5){
+        println("milk")
+    }
     else if (age in 7..14){
         println("Fanta Orange")
-       }
+    }
     else{
+
         println("Cocacola")
-       }
+    }
+
 }
+
 
 
 //4. Write a function that prints each number from 1 to 100 on a new line. For each
